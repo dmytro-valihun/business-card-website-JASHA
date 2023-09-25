@@ -1,0 +1,71 @@
+.burger-menu {
+    background:rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 0;
+    &__btn-close {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding: 10px;
+        font-size: 0;
+        border-radius: 10px;
+        background: none;
+        right: 10px;
+        top: 20px;
+        &:hover {
+            cursor: pointer;
+            background:rgba(0, 0, 0, 0.5);
+        }
+    }
+    &__wrap-option {
+        background:rgba(227, 180, 16, 0.1);
+        height: 100%;
+        margin: 10px 20px 70px;
+        padding: 50px 0;
+        border-radius: 20px;
+    }
+    &__option {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        a {
+            padding: 20px;
+            color: #E3B410;
+            background:rgba(0, 0, 0, 0.4);
+            margin-bottom: 5px;
+            text-align: center;
+            border-radius: 5px;
+            &:hover {
+                background:rgba(0, 0, 0, 0.8);
+            }
+        }
+    }
+    &__contacts {
+        margin: 0 -20px;
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #242424;
+        padding: 20px;
+        a {
+            display: flex;
+            padding: 10px;
+            &:hover {
+                border-radius: 10px;
+                background:rgba(0, 0, 0, 0.8);
+            }
+        }
+    }
+    &__tel {
+        color: #E3B410;
+    }
+    &--is-active {
+        display: none;
+    }
+}

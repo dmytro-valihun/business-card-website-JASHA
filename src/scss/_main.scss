@@ -1,0 +1,53 @@
+.main {
+    &__bg-image {
+        background: #000;
+        background-image: url('../img/bg-img-mercedes.jpeg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+    &__first-section {
+        padding: 40px 15px;
+        min-height: 600px;
+    }
+    &__first-article {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(36, 36, 36, 0.5);
+        border-radius: 10px;
+        color: #fff;
+        font-size: 30px;
+        line-height: 1.5;
+        min-height: 400px;
+        padding: 30px;
+        text-align: center;
+    }
+    &__clarify {
+        font-size: 16px;
+        text-shadow: 0 0 2px;
+        &--mod {
+            padding: 20px 0;
+            color: rgba(247, 206, 59, 0.7)
+        }
+    }
+    &__check-options {
+        margin: auto 20px 0 20px;
+        border-radius: 20px;
+        padding: 20px;
+        background: #8a2be2;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        border: 1px solid #000;
+        &:hover {
+            background: rgba(138, 43, 226, 0.4);
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main__first-article {
+        width: 50%;
+        flex-grow: 1;
+    }
+}
